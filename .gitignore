@@ -1,0 +1,6 @@
+project1/db.sqllite3
+__pycache__
+project1/IndianPremiereLeague/__pycache__/*
+project1/project1/__pycache__/*
+# *cpython-37.pyc
+*.cpython-37.pyc
