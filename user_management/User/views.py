@@ -12,3 +12,20 @@ class StudentView(APIView):
         except Exception as e:
             return Response({'error':str(e)})
 
+class TeachersView(APIView):
+    def get(self,request):
+        try:
+            query= Teacher.objects.all().values()
+            return Response(query)
+        except Exception as e:
+            return Response({'error':str(e)})
+
+    def put(self,request):
+        try:
+            query= Teacher.objects.filter().update(name='Gannu')
+            return Response(query)
+        except Exception as e:
+            return Response({'error':str(e)})
+
+
+

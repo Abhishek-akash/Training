@@ -16,9 +16,10 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path
-from User.views import StudentView
+from User.views import StudentView,TeachersView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'student/', StudentView.as_view()),
+    url(r'teacher/', TeachersView.as_view())
 ]
